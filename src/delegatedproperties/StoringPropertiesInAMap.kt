@@ -12,10 +12,7 @@ fun main(args: Array<String>) {
     println(user.age)  // Prints 25
 }
 
-val user = User(mapOf(
-        "name" to "John Doe",
-        "age"  to 25
-))
+val user = User(mapOf("name" to "John Doe", "age"  to 25))
 
 class User(val map: Map<String, Any?>) {
     val name: String by map
